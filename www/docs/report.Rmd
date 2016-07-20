@@ -1,0 +1,21 @@
+# Analysis of `r input$hashtag`
+
+This report was automatically generated based on the most recent `r nrow(tweets())` twitter tweets relating to `r input$hashtag`.
+
+### Wordcloud for `r input$hashtag`
+
+```{r, echo = FALSE}
+wordcloudpdf()
+```
+
+### Time Series plot for `r input$hashtag`
+
+```{r, echo = FALSE}
+timeseriespdf()
+```
+
+### Sentiment Analysis for `r input$hashtag`
+
+```{r, echo = FALSE}
+sentimentanalysispdf()
+```
